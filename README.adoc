@@ -1,0 +1,29 @@
+= Game of Streams: Aircraft Edition
+
+== Maintainer
+
+* Mark Heckler
+* mailto:mark@thehecklers.com[mark@thehecklers.com]
+* https://twitter.com/mkheck[@mkheck on Twitter]
+
+== Purpose
+
+This meta-repo accompanies my session titled *"Game of Streams: How to tame & get the most from your messaging platforms"* and includes all code written within the session and potentially more (depending upon how much I could cover before time ran out!). This is the updated "aircraft edition" with the latest/greatest developments within Spring Cloud Stream, RabbitMQ, Kafka, and more.
+
+*_Star+watch this repo for updates!_*
+
+== Notes
+
+. I've disabled security on all Actuator endpoints for this demonstration. **PLEASE DO NOT DO THIS FOR YOUR PRODUCTION APPS!** This is for ease of demonstration only.
+. To browse all Actuator endpoints available, verify upon which port Tomcat started for your application (as listed in startup status information from the command line or your IDE, note that this changes with each restart due to the "server.port=0" setting in application.properties) and substitute that port number below in a browser window tab: http://localhost:<insert_your_app_port_number_here>/actuator
+. To view Spring Cloud Stream and RabbitMQ/Kafka/<other_supported_messaging_platform> details, visit this URL (or navigate to its link from the above displayed page of all Actuator endpoints): http://localhost:<insert_your_app_port_number_here>/actuator/bindings
+
+== Related repository
+
+https://github.com/mkheck/LocalMessaging[Scripts I use to create, configure, & run RabbitMQ & Apache Kafka locally in support of this session]
+
+https://github.com/mkheck/game-of-streams-aircraft-edition-kotlin[Kotlin version, same capabilities]
+
+== Related presentation
+
+https://speakerdeck.com/mkheck/game-of-streams["Game of Streams: How to tame & get the most from your messaging platforms" presentation]
