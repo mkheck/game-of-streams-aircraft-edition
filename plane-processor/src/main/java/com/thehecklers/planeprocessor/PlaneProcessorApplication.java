@@ -1,15 +1,14 @@
 package com.thehecklers.planeprocessor;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import reactor.core.publisher.Flux;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.function.Function;
 
 @SpringBootApplication
@@ -23,7 +22,6 @@ public class PlaneProcessorApplication {
 
 @Configuration
 class PlaneFilter {
-/*
     @Bean
     Function<Flux<Aircraft>, Flux<EssentialAircraft>> transformAC() {
         return aircraftFlux -> aircraftFlux
@@ -33,9 +31,8 @@ class PlaneFilter {
                     ac.getType()))
                 .log();
     }
-*/
 
-    @Bean
+/*    @Bean
     Function<List<Aircraft>, List<EssentialAircraft>> transformAC() {
         return iterableAC -> {
             List<EssentialAircraft> eACs = new ArrayList<>();
@@ -49,7 +46,7 @@ class PlaneFilter {
 
             return eACs;
         };
-    }
+    }*/
 }
 
 
