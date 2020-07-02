@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import reactor.core.publisher.Flux;
 
-import java.util.List;
 import java.util.function.Consumer;
 
 @SpringBootApplication
@@ -22,17 +21,17 @@ public class PlaneSinkApplication {
 
 @Configuration
 class PlaneLogger {
-/*
 	@Bean
 	Consumer<Flux<EssentialAircraft>> logIt() {
 		return aircraftFlux -> aircraftFlux.subscribe(System.out::println);
 	}
-*/
 
+/*
 	@Bean
 	Consumer<List<EssentialAircraft>> logIt() {
 		return eACs -> eACs.forEach(System.out::println);
 	}
+*/
 }
 
 @Data
