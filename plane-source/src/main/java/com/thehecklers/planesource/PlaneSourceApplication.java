@@ -22,7 +22,7 @@ public class PlaneSourceApplication {
 
 @Configuration
 class PositionFeeder {
-	private final WebClient client = WebClient.create("http://localhost:8080");
+	private final WebClient client = WebClient.create("http://localhost:7634/aircraft");
 
 	@PollableBean
 	Supplier<Flux<Aircraft>> sendAC() {
